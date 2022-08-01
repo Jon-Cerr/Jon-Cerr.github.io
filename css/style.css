@@ -1,0 +1,352 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    color: #000;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(233, 248, 249);
+    background-size: cover
+}
+
+.content_all {
+    position: relative;
+    right: 0;
+    transition: all 300ms;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    transition: all 300ms;
+}
+
+.move_content{
+    right: 180px;
+}
+
+.container_header {
+    max-width: 1200px;
+    height: 100%;  
+    display: flex;
+    justify-content: space-between; 
+    margin: auto;
+    padding: 0px 20px;
+}
+
+.container_nav{
+    position: relative;
+    height: 100%;
+}
+
+nav{
+    height: 100%;
+}
+
+nav ul{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    margin: 0 20px;
+    list-style: none;
+}
+
+nav ul li a{
+    color: #373737;
+    font-size: 15px;
+    transition: .3s;
+}
+
+.nav_mod{
+    height: 70px;
+    box-shadow: 1px 1px 10px 0px #00000010;
+    background: white;
+}
+
+.btn__menu{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background 300ms;
+    display: none;
+}
+
+.btn__menu:hover{
+    background: #f5f5f5;
+}
+
+header .logo{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 150px;
+}
+
+.cover {
+    width: 100%;
+    margin-top: 100px;
+    padding-bottom: 10px;
+}
+
+.content_cover {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.cover .content_info {
+    max-width: 400px;
+    margin-top: 40px;
+    /* La propiedad CSS z-index indica el orden de un elemento posicionado y sus descendientes. Cuando varios elementos se superponen,
+    los elementos con mayor valor z-index cubren aquellos con menor valor.  */
+    z-index: 2;
+}
+
+.cover h1{
+    max-width: 400px;
+    font-size: 40px;
+    font-weight: 900;
+    color: #373737;
+}
+
+.cover h2{
+    font-size: 40px;
+    color: rgb(11, 115, 117);
+    margin-top: -30px;
+}
+
+.cover p{
+    margin-top: 10px;
+    color: #373737;
+}
+
+.cover input[type="button"]{
+    padding: 10px 40px;
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    color: #fff;
+    background-color: rgb(11, 115, 117);
+    border-radius: 15px;
+    box-shadow: 1px 1px 30px -5px #20202049;
+    cursor: pointer;
+    transition: box-shadow 500ms;
+}
+
+.cover input[type="button"]:hover{
+    box-shadow: 1px 1px 30px -5px #20202049;
+}
+
+.content_vector{
+    position: relative;
+}
+
+.content_vector img{
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    width: 600px;
+    animation: move_vector 6s ease-in-out infinite;
+    transition: all 100ms;
+}
+
+@keyframes move_vector{
+    0%{
+        transform: translateY(10px);
+    }
+    25%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+footer {
+    width: 100%;
+    padding: 0 0 20px 0;
+    position: relative;
+    right: 0;
+    transition: all 300ms;
+}
+
+.container_footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.title {
+    width: 280px;
+}
+
+.box_footer {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 30px;
+}
+
+.box_footer .terms {
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #343434;
+    font-size: 18px;
+}
+
+.box_footer h1 {
+    margin: 0;
+    color: #343434;
+    font-weight: 700;
+}
+
+.box_footer h2 {
+    margin: 10px 0;
+    color: #343434;
+    font-weight: 700;
+}
+
+.box_footer p {
+    color: #343434;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.box_footer a {
+    margin-top: 10px;
+    font-weight: 600;
+    font-weight: 600;
+}
+
+.box_footer a:hover {
+    opacity: 0.8;
+}
+
+.box_footer a .fab {
+    font-size: 20px;
+}
+
+.box_copyright {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.box_copyright p {
+    margin-top: 20px;
+    color: #343434;
+}
+
+.box_copyright hr {
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+
+.skills{
+    width: 100%;
+    padding: 0 0 20px 0;
+    position: relative;
+    right: 0;
+    transition: all 300ms;
+}
+
+.content_skills{
+    max-width: 1200px;
+    margin: auto;
+}
+
+::-webkit-scrollbar{
+    width: 20px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgb(222, 251, 242);
+    border-radius: 3em;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(11, 115, 117);
+    border-radius: 3em;
+}
+
+@media screen and (max-width: 920px){
+    
+    .content_vector img{
+        width: 500px;
+    }
+}
+
+
+@media screen and (max-width: 760px){
+
+    .container_nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn__menu{
+        display: flex;
+    }
+
+    nav{
+        height: 100%;
+        background: rgb(11, 115, 117);
+        position: fixed;
+        top: 0;
+        right: -180px;
+        padding: 0 40px;
+        transition: all 300ms;
+    }
+
+    .move_nav{
+        right: 0px;
+    }
+
+    nav ul{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li{
+        margin: 20px 0px;
+    }
+
+    nav ul li a{
+        color: #fff;
+    }
+
+    .content_vector img{
+        transform: scale(0);
+        animation: none;
+    }
+}
+
