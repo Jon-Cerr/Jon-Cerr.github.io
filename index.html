@@ -20,9 +20,10 @@
                         class="me"></a>
             </div>
             <div class="container_nav">
-                <nav id="nav">
-                    <ul>
-                        <li><a href="#content_all">Acerca de mi</a></li>
+                <nav class="nav" id="nav">
+                    <ul class="menu">
+                        <li><a href="#content_all" class="selected">Acerca de mi</a></li>
+                        <li><a href="#skills">Habilidades</a></li>
                         <li><a href="#">Trabajos</a></li>
                         <li><a href="#container_footer">Contactame</a></li>
                     </ul>
@@ -31,7 +32,7 @@
             </div>
         </div>
     </header>
-    <div class="content_all" id="content_all">
+    <section class="content_all" id="content_all">
         <div class="cover">
             <div class="content_cover">
                 <div class="content_info">
@@ -41,16 +42,41 @@
                         estoy aspirando a ser un full-stack developer. Tengo 17 años y acabo de culminar mi carrera como
                         Técnico en Computación, así mismo, aspiro a la Ingeniería en Sistemas Computacinales o
                         Licenciatura en Ciencia de Datos.</p>
-                    <a href="documents/cv_cerritos.pdf" download="cv_cerritos"><input type="button" value="Descarga mi CV"></a>
+                    <a href="documents/cv_cerritos.pdf" download="cv_cerritos"><input type="button"
+                            value="Descarga mi CV"></a>
                 </div>
                 <div class="content_vector">
                     <img src="images/undraw_Code_thinking_re_gka2.svg" alt="Desarrolo-imagen">
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <section class="skills" id="skills">
-        <div class="content_skills">
+        <span>Habilidades</span>
+        <div class="content_skills_cards">
+            <div class="card c1">
+                <div class="icon">
+                    <i class="fa-brands fa-html5"></i>
+                </div>
+                <div class="inf_descp">
+                    <p>HTML5</p>
+                </div>
+            </div>
+            <div class="card c2">
+                <div class="icon">
+                    <i class="fa-brands fa-css3"></i>
+                </div>
+                <div class="inf_descp">
+                    <p>CSS3</p></div>
+            </div>
+            <div class="card c3">
+                <div class="icon">
+                    <i class="fa-brands fa-java"></i>
+                </div>
+                <div class="inf_descp">
+                    <p>JAVA</p>
+                </div>
+            </div>
         </div>
     </section>
     <footer id="container_footer">
