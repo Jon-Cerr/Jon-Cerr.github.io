@@ -18,7 +18,7 @@ menu = document.getElementById("header");
 body = document.getElementById("content_all");
 nav = document.getElementById("nav");
 footer = document.getElementById("container_footer");
-section = document.getElementById("skills");
+skills = document.getElementById("skills");
 
 function mostrar_menu() {
 
@@ -26,7 +26,7 @@ function mostrar_menu() {
     body.classList.toggle('move_content');
     nav.classList.toggle('move_nav');
     footer.classList.toggle('move_content');
-    section.classList.toggle('move_content');
+    skills.classList.toggle('move_content');
 }
 
 window.addEventListener("resize", function () {
@@ -36,7 +36,7 @@ window.addEventListener("resize", function () {
         body.classList.remove('move_content');
         nav.classList.remove('move_nav');
         footer.classList.remove('move_content');
-        section.classList.remove('move_content');
+        skills.classList.remove('move_content');
     }
 
 });
@@ -52,5 +52,5 @@ function esconder_menu() {
     body.classList.remove('move_content');
     nav.classList.remove('move_nav');
     footer.classList.remove('move_content');
-    section.classList.remove('move_content');
+    skills.classList.remove('move_content');
 }
