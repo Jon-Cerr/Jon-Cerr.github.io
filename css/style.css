@@ -16,7 +16,7 @@ body {
 
 
 section[id]{
-    scroll-margin-top: 70px;
+    scroll-margin-top: 100px;
 }
 
 .content_all {
@@ -36,9 +36,7 @@ header{
     transition: all 300ms;
 }
 
-.move_content{
-    right: 180px;
-}
+
 
 .container_header {
     max-width: 1200px;
@@ -194,15 +192,19 @@ header .logo{
     }
 }
 
+.move_content{
+    right: 180px;
+}
+
 .skills{
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 0 0 2rem 0;
+    margin-top: 5rem;
     position: relative;
     right: 0;
     transition: all 300ms;
-    margin-top: 5rem;
 }
 
 .skills span{
